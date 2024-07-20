@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: 'Steppe-Book';
-    src: url('../fonts/Steppe-Book.ttf');
+    src: url("../fonts/Steppe-Book.ttf");
 }
 @font-face {
     font-family: 'Steppe-ExtraBold';
-    src: url('../fonts/Steppe-ExtraBold.ttf');
+    src: url("../fonts/Steppe-ExtraBold.ttf");
 }
 body {
     background-color: #5243F4;
