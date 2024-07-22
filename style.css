@@ -31,7 +31,7 @@ body {
     border-radius: 50px;
     text-align: center;
     cursor: pointer;
-    line-height: 18px;
+    line-height: 15px;
     z-index: 1;
     user-select: none;
     transform: scale(1);
