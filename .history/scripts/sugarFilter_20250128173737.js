@@ -1,0 +1,13 @@
+// Фильтрация по наличию сахара
+function switchSugarFree(products) {
+    const switchInput = document.querySelector("#switch"); // Получаем сам чекбокс
+
+    switchInput.addEventListener('change', ()=>{
+        const filteredCookies = switchInput.checked
+        ? products.filter(product => product.sugar === "sugar-free")
+        : products;
+        
+        renderCookies(filteredCookies);
+    });
+};
+    

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/images/cookies.png" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Cookies</title>
+</head>
+<body>
+    <div class="main">
+        <div class="currency" title="Изменить валюту" id="change-currency">$</div>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><img src="./images/logo.png" alt="Logo"></div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a data-link="products">Каталог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a data-link="love-backery">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a data-link="form_order">Оформление заказа</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="main-content">
+        <div class="container">
+            <img src="./images/line1.png" alt="line1" class="line1">
+            <div class="main-info">
+                <h1 class="main-title">Магия вкуса в каждой крошке</h1>
+                <p class="main-text">Наши рецепты вдыхают жизнь в изысканность ингредиентов: 
+                    ароматное натуральное масло, свежие сливки, чистый мёд и отборная мука. Мы 
+                    тщательно отбираем каждый компонент премиального печенья, стремясь 
+                    подарить вам истинное кулинарное наслаждение.</p>
+                    <div class="main-action">
+                        <button class="button" id="">Заказать</button>
+                    </div>
+            </div>
+            <img src="./images/cookie.png" alt="cookie" class="main-image">
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <img src="./images/line2.png" alt="line2" class="line2">
+            <h2>Выберите печенье</h2>
+            <div class="sugar-free">
+                <div>Все</div>
+                <input type="checkbox" id="switch"  />
+                <label for="switch"></label>
+                <div>Без сахара</div>
+            </div>
+            <div class="products-items">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="love-backery">
+        <div class="container">
+            <h2>Пекарня с любовью</h2>
+            <div class="love-items">
+                <div class="love-item info">
+                    <h3>Приготовлено с заботой, чтобы радовать вас каждый день</h3>
+                    <p>Мы с гордостью представляем наше печенье, которое мы выпекаем 
+                        вручную каждый день с 1995 года, используя только лучшие ингредиенты. 
+                        Погрузитесь в мир изысканных лакомств, приготовленных с применением 
+                        передовых технологий, и насладитесь их неповторимым вкусом.</p>
+                </div>
+                <div class="love-item image"><img src="./images/love.png" alt="Love-backery"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form_order">
+        <img src="./images/line3.png" alt="line3" class="line3">
+        <div class="container">
+            <h2>Закажите печенье</h2>
+            <img src="./images/breadcrumbs.png" alt="breadcrumbs" class="background-breadcrumbs">
+            <form class="order-block">
+                <div class="order-form">
+                    <p>Откройте для себя волшебство вкуса с нашим премиальным печеньем! 
+                        Закажите прямо сейчас и окунитесь в мир сладких наслаждений. </p>
+                        <div class="order-form-inputs">
+                            <input type="text" placeholder="Выберите печенье" id="product">
+                            <input type="text" placeholder="Ваше имя" id="name">
+                            <input type="text" placeholder="Ваш телефон" id="phone">
+                            <button type="button" class="button violet" id="order-action">Оформить заказ</button>
+                            <!-- type="button" прописан для кнопки, чтобы избежать перевода пользователя к 
+                             началу сайта и дать возможность активировать JS-код -->
+                        </div>
+                </div>
+                <div class="order-image"><img src="./images/order.png" alt="Cookies"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo"><img src="./images/logo.png" alt="Logo"></div>
+        <p>«Все права защищены»</p>
+    </footer>
+</div>
+<script type="module" src="./script.js"></script>
+</body>
+</html>
