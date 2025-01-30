@@ -163,3 +163,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
     switchSugarFree(products);
     fillInSelectedCookie();
 });
+
+

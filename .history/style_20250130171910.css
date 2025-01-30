@@ -16,7 +16,7 @@ body {
     font-family: 'Steppe-Book', sans-serif;
     color: white;
 }
-.wrapper {
+.wrap {
     position: relative;
     overflow: hidden;
 }

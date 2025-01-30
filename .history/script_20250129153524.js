@@ -18,7 +18,8 @@ for (let i = 0; i <buttons.length; i++) {
 // Подключение смены валюты
 let currentCurrency = "$";
 let currentCoefficient = 1;
-document.querySelector('#change-currency').addEventListener('click', (e)=>{
+// const prices = document.getElementsByClassName('products-item-price');
+document.getElementById('change-currency').addEventListener('click', (e)=>{
     const currencyOrder = ["$", "₽", "UZS", "€", "CN¥", "£", "DH"];
     const coefficients = [1, 90, 12600, 0.9, 7.3, 0.78, 3.67];
 
@@ -39,13 +40,7 @@ document.querySelector('#change-currency').addEventListener('click', (e)=>{
     updatePrices();
 });
 
-function updatePrices() {
-    const prices = document.querySelectorAll('.products-item-price');
-    prices.forEach((priceElement) => {
-        const basePrice = parseFloat(priceElement.getAttribute('data-base-price'));
-        priceElement.innerText = `${(basePrice * currentCoefficient).toFixed(1)} ${currentCurrency}`;
-    });
-}
+
 
 // Валидация запроса
 const productField = document.getElementById('product');
@@ -100,7 +95,7 @@ function renderCookies(products) {
                     <p>${cookies.text}</p>
                     <div class="products-item-extra">
                         <div class="products-item-info" data-sugar-free="${cookies.sugar}">
-                            <div class="products-item-price"  data-base-price="${cookies.price}">${(cookies.price * currentCoefficient).toFixed(1)} ${currentCurrency}</div>
+                            <div class="products-item-price"  data-base-price="${cookies.price}">${cookies.price} $</div>
                             <div class="products-item-weight">${cookies.amount} шт./ ${cookies.weight} гр.</div>
                          </div>
                         <button class="button violet">Заказать</button>
@@ -163,3 +158,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
     switchSugarFree(products);
     fillInSelectedCookie();
 });
+
+

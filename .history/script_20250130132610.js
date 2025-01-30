@@ -18,7 +18,8 @@ for (let i = 0; i <buttons.length; i++) {
 // Подключение смены валюты
 let currentCurrency = "$";
 let currentCoefficient = 1;
-document.querySelector('#change-currency').addEventListener('click', (e)=>{
+// const prices = document.getElementsByClassName('products-item-price');
+document.query('change-currency').addEventListener('click', (e)=>{
     const currencyOrder = ["$", "₽", "UZS", "€", "CN¥", "£", "DH"];
     const coefficients = [1, 90, 12600, 0.9, 7.3, 0.78, 3.67];
 
@@ -163,3 +164,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
     switchSugarFree(products);
     fillInSelectedCookie();
 });
+
+
